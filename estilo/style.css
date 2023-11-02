@@ -36,10 +36,7 @@ header{
 
 .logo{
     height: 60px;
-    color: white;
     display: inline-block;
-    font-family: var(--font1);
-    font-size: 15px;
     padding-top: 15px;
     margin: 0px 15px;
 }
