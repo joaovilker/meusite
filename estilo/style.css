@@ -21,48 +21,50 @@
     --cor4: #223459;
     --cor5: #161F3C;
 
-    --font1: argon, sans-serif;
+    --font1: psans, sans-serif;
     --font2: psans, sans-serif;
 }
+*{
+    margin: 0;
+    padding: 0;
 
+}
 header{
-    background-image: linear-gradient(-140deg, var(--cor1dgd), var(--cor2dgd));
-    background-size: cover;
+    background-image: linear-gradient(-140deg, var(--cor1), var(--cor4));
+    background-size: cover;    
 }
 
-h1.logo{
-    padding: 5%;
-    font-weight: normal;
+.logo{
+    height: 60px;
+    color: white;
+    display: inline-block;
     font-family: var(--font1);
-    display: inline-block;
-    font-size: 3em;
-    text-align: center;
+    font-size: 15px;
+    padding-top: 15px;
+    margin: 0px 15px;
 }
-#contlogo{
 
-    font-family: var(--font2);
-    display: inline-block;
-    text-align: center;
-}
 
 nav{
     margin: 0;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
-    background-color:transparent;    
+    font-family: var(--font1);
+    background-color: transparent;
+    flex-wrap: nowrap;
+    flex-direction: column; 
 }
 ul{
-    margin: 0;
+    margin: 0px;
     padding: 15px;
-    display: flex;
+    display: inline-flex;
     list-style-type: none;
 }
 
 ul li a{
-    color: black;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
     pad: 5px 10px;
@@ -73,7 +75,8 @@ ul li a{
 
 a:hover{
     background-color: var(--cor1);
-    color: white;
+    padding: 5px;
+    color: rgb(0, 0, 0);
 }
 
 a::before{
@@ -83,7 +86,7 @@ a::before{
     left: 12px;
     height: 12px;
     width: 12px;
-    border: 3px solid var(--cor2);
+    border: 3px solid white;
     border-width: 0px 0px 3px 3px;
     opacity: 0;
     transition: all .3s;
@@ -96,7 +99,7 @@ a::after{
     right: 12px;
     height: 12px;
     width: 12px;
-    border: 3px solid var(--cor2);
+    border: 3px solid white;
     border-width: 3px 3px 0px 0px;
     opacity: 0;
     transition: all .3s;
